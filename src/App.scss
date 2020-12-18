@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+ul {
+	color: inherit;
+	list-style: none;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.p {
+	padding: 0.5rem;
+	&-1 {
+		padding: 1rem;
+	}
+	&-2 {
+		padding: 2rem;
+	}
+	&-3 {
+		padding: 3rem;
+	}
+}
+.py {
+	padding: 0.5rem 0;
+	&-1 {
+		padding: 1rem 0;
+	}
+	&-2 {
+		padding: 2rem 0;
+	}
+	&-3 {
+		padding: 3rem 0;
+	}
+}
+.m {
+	margin: 0.5rem;
+	&-1 {
+		margin: 1rem;
+	}
+	&-2 {
+		margin: 2rem;
+	}
+	&-3 {
+		margin: 3rem;
+	}
+}
+.my {
+	margin: 0.5rem 0;
+	&-1 {
+		margin: 1rem 0;
+	}
+	&-2 {
+		margin: 2rem 0;
+	}
+	&-3 {
+		margin: 3rem 0;
+	}
+}
+.container {
+	max-width: 1280px;
+	margin: 2.5rem auto;
+	padding: 0 3rem;
+}
+nav {
+	background-color: #1890ff;
+	.nav-container {
+		max-width: 1280px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 5.5rem;
+		h1 {
+			color: white;
+		}
+		ul {
+			display: flex;
+			li {
+				padding: 0 1rem;
+				font-size: 1.2rem;
+				a {
+					opacity: 0.75;
+					color: white;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.card {
+	margin: 1rem;
+	width: 240px;
+	img {
+		height: 360px;
+		object-fit: cover;
+		max-width: 100%;
+	}
+	&:hover {
+		opacity: 0.75;
+	}
+}
+
+.details {
+	max-width: 1280px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	img {
+		margin: 2rem 2rem;
+		width: 300px;
+		height: 450px;
+		object-fit: cover;
+	}
+	.desc {
+		h2 {
+			font-size: 2.1rem;
+		}
+		p {
+			font-size: 1.3rem;
+		}
+	}
+}
